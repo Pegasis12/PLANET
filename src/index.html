@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Planet</title>
+  </head>
+  <body>
+    <header class="flex items-center justify-between gap-8 py-8 container">
+      <div>
+        <a href="./index.html">
+          <img
+            src="./img/planet-logo-preta.svg"
+            alt="logo planet"
+            width="140"
+            height="140"
+          />
+        </a>
+      </div>
+      <nav class="hidden md:block">
+        <ul
+          class="flex items-center gap-8 text-neutral-950 *:font-medium *:hover:text-neutral-500 *:cursor-pointer"
+        >
+          <li>Serviços</li>
+          <li>Trabalhos</li>
+          <li>Sobre</li>
+          <li>Contato</li>
+        </ul>
+      </nav>
+      <button
+        id="mobile-button"
+        class="flex items-center font-medium gap-2 lg:hidden"
+      >
+        <span class="size-2 rounded-full bg-verde-300"></span>
+        Menu
+      </button>
+    </header>
+
+    <main class="container mb-8 md:mb-16">
+      <div class="md:p-24 mb-8">
+        <h1
+          class="text-neutral-950 font-medium text-4xl md:text-8xl text-balance max-w-screen-sm mb-8"
+        >
+          Seu mundo criativo começa aqui
+        </h1>
+        <p class="text-base md:text-xl text-balance max-w-screen-sm">
+          Somos uma agência criativa especializada na criação de sites, vídeos e
+          design visual. Unimos estratégia, estética e tecnologia para dar vida
+          a projetos que se destacam e conectam marcas ao seu público.
+        </p>
+      </div>
+      <div>
+        <video
+          class="rounded-2xl"
+          src="./img/video-teste-planet.mp4"
+          autoplay
+          muted
+          playsinline
+          loop
+        ></video>
+      </div>
+    </main>
+
+    <section class="container mb-8 md:mb-16">
+      <div class="md:flex justify-between items-end">
+        <div>
+          <h1
+            class="text-neutral-950 font-medium text-3xl md:text-8xl text-balance max-w-screen-lg mb-8"
+          >
+            Trabalhos
+          </h1>
+          <p
+            class="text-base md:text-xl text-balance max-w-screen-sm max-md:mb-8"
+          >
+            De sites modernos e funcionais a vídeos criativos e impactantes,
+            passando por identidades visuais que fortalecem marcas criamos tudo
+            com foco em estética, performance e conexão real com o público.
+          </p>
+        </div>
+
+        <div>
+          <a
+            class="relative inline-block w-fit text-xl md:text-3xl font-medium group"
+            href="#"
+          >
+            Veja Mais Projetos
+            <span
+              class="absolute left-0 -bottom-3 w-full h-[2px] bg-verde-400"
+            ></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
