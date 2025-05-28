@@ -3,13 +3,10 @@
 
 /* não usamos mais o tailwind config, agora tudo dentro do css input, as cores por exemplo colocamos dentro de theme */
 @theme{
-  --color-verde-200: #ACEF75;
-  --color-verde-300: #91EE77;
-  --color-verde-400: #17E880;
-  --color-verde-700: #2E482C;
-  --color-verde-800: #16281F;
-  --color-verde-900: #0F1C15;
-  --color-verde-950: #030504;
+  --color-verde-200: #ECFFAB;
+  --color-verde-300: #8EFFBA;
+  --color-verde-400: #01FFD0;
+  --color-verde-700: #01FFD0;
 
   --font-sans: 'DM Sans', 'system-ui', 'sans-serif';
   --font-serif: 'DM Serif Text', 'Georgia', 'serif';

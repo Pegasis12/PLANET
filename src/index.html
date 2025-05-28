@@ -37,7 +37,7 @@
       </button>
     </header>
 
-    <main class="container mb-8 md:mb-16">
+    <main class="container mb-8 md:mb-16 max-md:mt-8">
       <div class="md:p-24 mb-8">
         <h1
           class="text-neutral-950 font-medium text-4xl md:text-8xl text-balance max-w-screen-sm mb-8"
@@ -81,12 +81,15 @@
 
         <div>
           <a
-            class="relative inline-block w-fit text-xl md:text-3xl font-medium group"
             href="#"
+            class="relative inline-block w-fit text-xl md:text-3xl font-medium group"
           >
             Veja Mais Projetos
             <span
-              class="absolute left-0 -bottom-3 w-full h-[2px] bg-verde-400"
+              class="absolute -bottom-3 left-0 h-[2px] w-full bg-verde-400 origin-left scale-x-100 transition-transform duration-500 group-hover:scale-x-0 will-change-transform pointer-events-none"
+            ></span>
+            <span
+              class="absolute -bottom-3 left-0 h-[2px] w-full bg-verde-400 origin-right scale-x-0 transition-transform duration-500 delay-200 group-hover:scale-x-100 will-change-transform pointer-events-none"
             ></span>
           </a>
         </div>
@@ -159,8 +162,8 @@
       </div>
     </section>
 
-        <section class="container mb-8 md:mb-16">
-      <div class="md:flex justify-between items-end mb-10">
+    <section class="container mb-8 md:mb-16">
+      <div class="md:flex justify-between items-end mb-10 md:mb-16">
         <div>
           <h1
             class="text-neutral-950 font-medium text-3xl md:text-8xl text-balance max-w-screen-lg mb-8"
@@ -170,20 +173,90 @@
           <p
             class="text-base md:text-xl text-balance max-w-screen-sm max-md:mb-8"
           >
-            Oferecemos três serviços criativos pensados para manter tudo simples e eficaz: sites, vídeos e design visual. Sem complicação, só resultados com estética e impacto.
+            Oferecemos três serviços criativos pensados para manter tudo simples
+            e eficaz: sites, vídeos e design visual. Sem complicação, só
+            resultados com estética e impacto.
           </p>
         </div>
 
         <div>
-          <a
-            class="relative inline-block w-fit text-xl md:text-3xl font-medium group"
+                    <a
             href="#"
+            class="relative inline-block w-fit text-xl md:text-3xl font-medium group"
           >
             Veja Todos Os Serviços
             <span
-              class="absolute left-0 -bottom-3 w-full h-[2px] bg-verde-400"
+              class="absolute -bottom-3 left-0 h-[2px] w-full bg-verde-400 origin-left scale-x-100 transition-transform duration-500 group-hover:scale-x-0 will-change-transform pointer-events-none"
+            ></span>
+            <span
+              class="absolute -bottom-3 left-0 h-[2px] w-full bg-verde-400 origin-right scale-x-0 transition-transform duration-500 delay-200 group-hover:scale-x-100 will-change-transform pointer-events-none"
             ></span>
           </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="border border-neutral-300 rounded-md cursor-pointer group">
+          <div
+            class="flex items-center justify-between p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
+          >
+            <h3 class="font-medium text-2xl md:text-3xl">WebSites</h3>
+            <a class="relative inline-flex items-center gap-2" href="">
+              <span class="size-4 rounded-full bg-verde-400"></span>
+              Veja mais
+              <span
+                class="-bottom-2 absolute w-0 group-hover:w-full h-[2px] bg-verde-400 transition-all duration-500"
+              ></span>
+            </a>
+          </div>
+          <div class="p-4 text-balance">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit, Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+
+        <div class="border border-neutral-300 rounded-md cursor-pointer group">
+          <div
+            class="flex items-center justify-between p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
+          >
+            <h3 class="font-medium text-2xl md:text-3xl">Designer</h3>
+            <a class="relative inline-flex items-center gap-2" href="">
+              <span class="size-4 rounded-full bg-verde-400"></span>
+              Veja mais
+              <span
+                class="-bottom-2 absolute w-0 group-hover:w-full h-[2px] bg-verde-400 transition-all duration-500"
+              ></span>
+            </a>
+          </div>
+          <div class="p-4 text-balance">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit, Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+
+        <div class="border border-neutral-300 rounded-md cursor-pointer group">
+          <div
+            class="flex items-center justify-between p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
+          >
+            <h3 class="font-medium text-2xl md:text-3xl">Vídeos</h3>
+            <a class="relative inline-flex items-center gap-2" href="">
+              <span class="size-4 rounded-full bg-verde-400"></span>
+              Veja mais
+              <span
+                class="-bottom-2 absolute w-0 group-hover:w-full h-[2px] bg-verde-400 transition-all duration-500"
+              ></span>
+            </a>
+          </div>
+          <div class="p-4 text-balance">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit, Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
         </div>
       </div>
     </section>
