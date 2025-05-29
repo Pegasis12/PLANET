@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="A Planet é uma agência criativa que desenvolve sites, vídeos e designs com foco em estética, performance e conexão real com o público."
     />
     <title>Planet</title>
   </head>
@@ -28,14 +32,22 @@
           />
         </a>
       </div>
-      <nav class="hidden md:block">
+      <nav class="hidden md:block" aria-label="Navegação principal">
         <ul
           class="flex items-center gap-8 text-preto-200 *:font-medium *:hover:text-neutral-500 font-serif"
         >
-          <li class="animate-slide-in opacity-0 animate-1"><a href="#servicos">Serviços</a></li>
-          <li class="animate-slide-in opacity-0 animate-2"><a href="./trabalhos.html">Trabalhos</a></li>
-          <li class="animate-slide-in opacity-0 animate-3"><a href="/sobre.html">Sobre</a></li>
-          <li class="animate-slide-in opacity-0 animate-4"><a href="/contato.html">Contato</a></li>
+          <li class="animate-slide-in opacity-0 animate-1">
+            <a href="#servicos">Serviços</a>
+          </li>
+          <li class="animate-slide-in opacity-0 animate-2">
+            <a href="./trabalhos.html">Trabalhos</a>
+          </li>
+          <li class="animate-slide-in opacity-0 animate-3">
+            <a href="/sobre.html">Sobre</a>
+          </li>
+          <li class="animate-slide-in opacity-0 animate-4">
+            <a href="/contato.html">Contato</a>
+          </li>
         </ul>
       </nav>
       <button
@@ -119,9 +131,9 @@
             />
           </div>
           <div>
-            <h3 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+            <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
               Dra Mari
-            </h3>
+            </h2>
             <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
           </div>
         </div>
@@ -137,9 +149,9 @@
             />
           </div>
           <div>
-            <h3 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+            <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
               Florada
-            </h3>
+            </h2>
             <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
           </div>
         </div>
@@ -155,9 +167,9 @@
             />
           </div>
           <div>
-            <h3 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+            <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
               50 anos Heating Cooling
-            </h3>
+            </h2>
             <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
           </div>
         </div>
@@ -173,9 +185,9 @@
             />
           </div>
           <div>
-            <h3 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+            <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
               Romilda Borges Semijóias
-            </h3>
+            </h2>
             <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
           </div>
         </div>
@@ -226,11 +238,11 @@
           <div
             class="flex items-center justify-between p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
           >
-            <h3
+            <h2
               class="text-preto-200 font-medium text-2xl lg:text-3xl font-sans"
             >
               WebSites
-            </h3>
+            </h2>
             <a
               class="text-preto-300 relative inline-flex items-center gap-2"
               href=""
@@ -257,11 +269,11 @@
           <div
             class="flex items-center justify-between p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
           >
-            <h3
+            <h2
               class="text-preto-200 font-medium text-2xl lg:text-3xl font-sans"
             >
               Designer
-            </h3>
+            </h2>
             <a
               class="text-preto-300 relative inline-flex items-center gap-2"
               href=""
@@ -288,11 +300,11 @@
           <div
             class="flex items-center justify-between p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
           >
-            <h3
+            <h2
               class="text-preto-200 font-medium text-2xl lg:text-3xl font-sans"
             >
               Vídeos
-            </h3>
+            </h2>
             <a
               class="text-preto-300 relative inline-flex items-center gap-2"
               href=""
@@ -328,22 +340,30 @@
 
       <div>
         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 font-serif">
-          <li class="flex gap-3 items-center opacity-0 animate-fade-in animate-1">
+          <li
+            class="flex gap-3 items-center opacity-0 animate-fade-in animate-1"
+          >
             <span class="shrink-0 size-2 rounded-full bg-verde-400"></span>Crie
             uma presença digital forte com sites que combinam design e
             performance
           </li>
-          <li class="flex gap-3 items-center opacity-0 animate-fade-in animate-2">
+          <li
+            class="flex gap-3 items-center opacity-0 animate-fade-in animate-2"
+          >
             <span class="shrink-0 size-2 rounded-full bg-verde-400"></span>Conte
             histórias impactantes com vídeos que conectam sua marca ao público
             certo
           </li>
-          <li class="flex gap-3 items-center opacity-0 animate-fade-in animate-3">
+          <li
+            class="flex gap-3 items-center opacity-0 animate-fade-in animate-3"
+          >
             <span class="shrink-0 size-2 rounded-full bg-verde-400"></span
             >Fortaleça sua identidade visual com designs que transmitem
             confiança e estilo
           </li>
-          <li class="flex gap-3 items-center opacity-0 animate-fade-in animate-4">
+          <li
+            class="flex gap-3 items-center opacity-0 animate-fade-in animate-4"
+          >
             <span class="shrink-0 size-2 rounded-full bg-verde-400"></span
             >Transforme sua visão em experiências visuais envolventes e
             memoráveis
@@ -359,7 +379,7 @@
       <div class="max-lg:mb-16">
         <div class="mb-8">
           <p
-            class="text-preto-200 text-xl md:text-2xl text-balance max-w-screen-lg max-md:mb-8 font-medium font-serif opacity-0 animate-fade-in animate-1"
+            class="text-preto-200 text-xl md:text-2xl text-balance max-w-screen-lg max-md:mb-8 font-serif opacity-0 animate-fade-in animate-1"
           >
             "Trabalhar com a Planet foi uma das melhores decisões que tomamos
             para o WebFlux. Eles entenderam exatamente o que queríamos, criaram
@@ -369,7 +389,9 @@
           </p>
         </div>
 
-        <div class="flex items-center gap-4 opacity-0 animate-fade-in animate-2">
+        <div
+          class="flex items-center gap-4 opacity-0 animate-fade-in animate-2"
+        >
           <div>
             <img
               class="rounded-md"
@@ -380,9 +402,9 @@
             />
           </div>
           <div>
-            <h3 class="font-medium text-preto-200 text-xl font-sans">
+            <h2 class="font-medium text-preto-200 text-xl font-sans">
               Fernando
-            </h3>
+            </h2>
             <p class="text-preto-300 font-serif">Empreendedor</p>
           </div>
         </div>
@@ -400,9 +422,9 @@
         </div>
 
         <div>
-          <h3 class="text-lg font-medium text-preto-300 mb-2 font-serif">
+          <h2 class="text-lg font-medium text-preto-300 mb-2 font-serif">
             WebFlux
-          </h3>
+          </h2>
           <a
             href="#"
             class="text-preto-200 relative inline-block w-fit text-xl font-medium group whitespace-nowrap font-sans"
@@ -440,7 +462,7 @@
         </a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:justify-self-end">
+      <div class="grid grid-cols-2 gap-16 lg:justify-self-end">
         <div>
           <h2 class="text-xl font-medium text-preto-300 mb-4 font-sans">
             Navegação
