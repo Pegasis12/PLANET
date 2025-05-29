@@ -32,10 +32,10 @@
         <ul
           class="flex items-center gap-8 text-preto-200 *:font-medium *:hover:text-neutral-500 font-serif"
         >
-          <li><a href="">Serviços</a></li>
-          <li><a href="">Trabalhos</a></li>
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Contato</a></li>
+          <li class="animate-slide-in opacity-0 animate-1"><a href="#servicos">Serviços</a></li>
+          <li class="animate-slide-in opacity-0 animate-2"><a href="./trabalhos.html">Trabalhos</a></li>
+          <li class="animate-slide-in opacity-0 animate-3"><a href="/sobre.html">Sobre</a></li>
+          <li class="animate-slide-in opacity-0 animate-4"><a href="/contato.html">Contato</a></li>
         </ul>
       </nav>
       <button
@@ -50,12 +50,12 @@
     <main class="container mb-16 max-md:mt-8">
       <div class="md:py-8 lg:px-16 lg:py-8 mb-8">
         <h1
-          class="text-preto-200 font-sans font-medium text-4xl md:text-8xl text-balance max-w-screen-lg mb-8"
+          class="text-preto-200 font-sans font-medium text-4xl md:text-8xl text-balance max-w-screen-lg mb-8 opacity-0 animate-fade-in animate-1"
         >
           Seu mundo criativo começa aqui
         </h1>
         <p
-          class="text-base font-serif md:text-xl text-balance max-w-screen-lg text-preto-300"
+          class="text-base font-serif md:text-xl text-balance max-w-screen-lg text-preto-300 opacity-0 animate-fade-in animate-2"
         >
           Somos uma agência criativa especializada na criação de sites, vídeos e
           design visual. Unimos estratégia, estética e tecnologia para dar vida
@@ -78,12 +78,12 @@
       <div class="md:flex justify-between items-end mb-10">
         <div>
           <h1
-            class="text-preto-200 font-sans font-medium text-3xl md:text-8xl text-balance max-w-screen-lg mb-8"
+            class="text-preto-200 font-sans font-medium text-3xl md:text-8xl text-balance max-w-screen-lg mb-8 opacity-0 animate-fade-in animate-1"
           >
             Trabalhos
           </h1>
           <p
-            class="text-preto-300 font-serif text-base md:text-xl text-balance max-w-screen-lg max-md:mb-8"
+            class="text-preto-300 font-serif text-base md:text-xl text-balance max-w-screen-lg max-md:mb-8 opacity-0 animate-fade-in animate-2"
           >
             De sites modernos e funcionais a vídeos criativos e impactantes,
             passando por identidades visuais que fortalecem marcas criamos tudo
@@ -94,7 +94,7 @@
         <div>
           <a
             href="#"
-            class="text-preto-200 relative inline-block w-fit text-xl md:text-3xl font-medium group whitespace-nowrap font-sans"
+            class="text-preto-200 relative inline-block w-fit text-xl md:text-3xl font-medium group whitespace-nowrap font-sans opacity-0 animate-fade-in animate-3"
           >
             Veja Mais Projetos
             <span
@@ -119,7 +119,9 @@
             />
           </div>
           <div>
-            <h3 class="text-preto-200 mb-2 text-xl font-medium font-sans">Dra Mari</h3>
+            <h3 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+              Dra Mari
+            </h3>
             <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
           </div>
         </div>
@@ -135,7 +137,9 @@
             />
           </div>
           <div>
-            <h3 class="text-preto-200 mb-2 text-xl font-medium font-sans">Florada</h3>
+            <h3 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+              Florada
+            </h3>
             <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
           </div>
         </div>
@@ -178,16 +182,20 @@
       </div>
     </section>
 
-    <section class="container mb-16 md:mb-20" aria-label="Serviços">
+    <section
+      id="servicos"
+      class="container mb-16 md:mb-20"
+      aria-label="Serviços"
+    >
       <div class="md:flex justify-between items-end mb-10 md:mb-16">
         <div>
           <h1
-            class="text-preto-200 font-medium text-3xl md:text-8xl text-balance max-w-screen-lg mb-8 font-sans"
+            class="text-preto-200 font-medium text-3xl md:text-8xl text-balance max-w-screen-lg mb-8 font-sans opacity-0 animate-fade-in animate-1"
           >
             Serviços
           </h1>
           <p
-            class="text-preto-300 text-base md:text-xl text-balance max-w-screen-sm max-md:mb-8 font-serif"
+            class="text-preto-300 text-base md:text-xl text-balance max-w-screen-sm max-md:mb-8 font-serif opacity-0 animate-fade-in animate-2"
           >
             Oferecemos três serviços criativos pensados para manter tudo simples
             e eficaz: sites, vídeos e design visual. Sem complicação, só
@@ -198,7 +206,7 @@
         <div>
           <a
             href="#"
-            class="text-preto-200 relative inline-block w-fit text-xl md:text-3xl font-medium group whitespace-nowrap font-sans"
+            class="text-preto-200 relative inline-block w-fit text-xl md:text-3xl font-medium group whitespace-nowrap font-sans opacity-0 animate-fade-in animate-3"
           >
             Veja Todos Os Serviços
             <span
@@ -213,12 +221,14 @@
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
         <div
-          class="border border-neutral-300 overflow-hidden rounded-md cursor-pointer group hover:shadow-xl transition duration-300"
+          class="border border-neutral-300 overflow-hidden rounded-md cursor-pointer group hover:shadow-xl transition duration-300 opacity-0 animate-fade-in animate-1"
         >
           <div
             class="flex items-center justify-between p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
           >
-            <h3 class="text-preto-200 font-medium text-2xl lg:text-3xl font-sans">
+            <h3
+              class="text-preto-200 font-medium text-2xl lg:text-3xl font-sans"
+            >
               WebSites
             </h3>
             <a
@@ -242,12 +252,14 @@
         </div>
 
         <div
-          class="border border-neutral-300 rounded-md cursor-pointer group overflow-hidden hover:shadow-xl transition duration-300"
+          class="border border-neutral-300 rounded-md cursor-pointer group overflow-hidden hover:shadow-xl transition duration-300 opacity-0 animate-fade-in animate-2"
         >
           <div
             class="flex items-center justify-between p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
           >
-            <h3 class="text-preto-200 font-medium text-2xl lg:text-3xl font-sans">
+            <h3
+              class="text-preto-200 font-medium text-2xl lg:text-3xl font-sans"
+            >
               Designer
             </h3>
             <a
@@ -271,12 +283,14 @@
         </div>
 
         <div
-          class="border border-neutral-300 rounded-md cursor-pointer group overflow-hidden hover:shadow-xl transition duration-300"
+          class="border border-neutral-300 rounded-md cursor-pointer group overflow-hidden hover:shadow-xl transition duration-300 opacity-0 animate-fade-in animate-3"
         >
           <div
             class="flex items-center justify-between p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
           >
-            <h3 class="text-preto-200 font-medium text-2xl lg:text-3xl font-sans">
+            <h3
+              class="text-preto-200 font-medium text-2xl lg:text-3xl font-sans"
+            >
               Vídeos
             </h3>
             <a
@@ -301,12 +315,12 @@
     </section>
 
     <section
-      class="container mb-16 md:mb-20 grid grid-cols-1 lg:grid-cols-[500px_1fr] items-center gap-8 "
+      class="container mb-16 md:mb-20 grid grid-cols-1 lg:grid-cols-[500px_1fr] items-center gap-8"
       aria-label="Juntos, podemos!"
     >
       <div>
         <h1
-          class="text-preto-200 font-medium text-3xl md:text-8xl text-balance font-sans"
+          class="text-preto-200 font-medium text-3xl md:text-8xl text-balance font-sans opacity-0 animate-fade-in animate-1"
         >
           Juntos, podemos...
         </h1>
@@ -314,22 +328,22 @@
 
       <div>
         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 font-serif">
-          <li class="flex gap-3 items-center">
+          <li class="flex gap-3 items-center opacity-0 animate-fade-in animate-1">
             <span class="shrink-0 size-2 rounded-full bg-verde-400"></span>Crie
             uma presença digital forte com sites que combinam design e
             performance
           </li>
-          <li class="flex gap-3 items-center">
+          <li class="flex gap-3 items-center opacity-0 animate-fade-in animate-2">
             <span class="shrink-0 size-2 rounded-full bg-verde-400"></span>Conte
             histórias impactantes com vídeos que conectam sua marca ao público
             certo
           </li>
-          <li class="flex gap-3 items-center">
+          <li class="flex gap-3 items-center opacity-0 animate-fade-in animate-3">
             <span class="shrink-0 size-2 rounded-full bg-verde-400"></span
             >Fortaleça sua identidade visual com designs que transmitem
             confiança e estilo
           </li>
-          <li class="flex gap-3 items-center">
+          <li class="flex gap-3 items-center opacity-0 animate-fade-in animate-4">
             <span class="shrink-0 size-2 rounded-full bg-verde-400"></span
             >Transforme sua visão em experiências visuais envolventes e
             memoráveis
@@ -345,7 +359,7 @@
       <div class="max-lg:mb-16">
         <div class="mb-8">
           <p
-            class="text-preto-200 text-xl md:text-2xl text-balance max-w-screen-lg max-md:mb-8 font-medium font-serif"
+            class="text-preto-200 text-xl md:text-2xl text-balance max-w-screen-lg max-md:mb-8 font-medium font-serif opacity-0 animate-fade-in animate-1"
           >
             "Trabalhar com a Planet foi uma das melhores decisões que tomamos
             para o WebFlux. Eles entenderam exatamente o que queríamos, criaram
@@ -355,7 +369,7 @@
           </p>
         </div>
 
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 opacity-0 animate-fade-in animate-2">
           <div>
             <img
               class="rounded-md"
@@ -366,13 +380,15 @@
             />
           </div>
           <div>
-            <h3 class="font-medium text-preto-200 text-xl font-sans">Fernando</h3>
+            <h3 class="font-medium text-preto-200 text-xl font-sans">
+              Fernando
+            </h3>
             <p class="text-preto-300 font-serif">Empreendedor</p>
           </div>
         </div>
       </div>
 
-      <div>
+      <div class="opacity-0 animate-fade-in animate-3">
         <div class="mb-6">
           <img
             class="rounded-md size-full object-cover"
@@ -384,7 +400,9 @@
         </div>
 
         <div>
-          <h3 class="text-lg font-medium text-preto-300 mb-2 font-serif">WebFlux</h3>
+          <h3 class="text-lg font-medium text-preto-300 mb-2 font-serif">
+            WebFlux
+          </h3>
           <a
             href="#"
             class="text-preto-200 relative inline-block w-fit text-xl font-medium group whitespace-nowrap font-sans"
@@ -424,18 +442,26 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:justify-self-end">
         <div>
-          <h2 class="text-xl font-medium text-preto-300 mb-4 font-sans">Navegação</h2>
-          <ul class="space-y-2 text-preto-200 *:hover:text-neutral-500 font-serif">
-            <li><a href="">Serviços</a></li>
-            <li><a href="">Trabalhos</a></li>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Contato</a></li>
+          <h2 class="text-xl font-medium text-preto-300 mb-4 font-sans">
+            Navegação
+          </h2>
+          <ul
+            class="space-y-2 text-preto-200 *:hover:text-neutral-500 font-serif"
+          >
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="./trabalhos.html">Trabalhos</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./contato.html">Contato</a></li>
           </ul>
         </div>
 
         <div>
-          <h2 class="text-xl font-medium text-preto-300 mb-4 font-sans">Redes</h2>
-          <ul class="space-y-2 text-preto-200 *:hover:text-neutral-500 font-serif">
+          <h2 class="text-xl font-medium text-preto-300 mb-4 font-sans">
+            Redes
+          </h2>
+          <ul
+            class="space-y-2 text-preto-200 *:hover:text-neutral-500 font-serif"
+          >
             <li><a href="">Instagram</a></li>
             <li><a href="">Linkedin</a></li>
             <li><a href="">Behance</a></li>
