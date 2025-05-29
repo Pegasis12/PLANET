@@ -24,12 +24,12 @@
       </div>
       <nav class="hidden md:block">
         <ul
-          class="flex items-center gap-8 text-preto-200 *:font-medium *:hover:text-neutral-500 *:cursor-pointer"
+          class="flex items-center gap-8 text-preto-200 *:font-medium *:hover:text-neutral-500"
         >
-          <li>Serviços</li>
-          <li>Trabalhos</li>
-          <li>Sobre</li>
-          <li>Contato</li>
+          <li><a href="">Serviços</a></li>
+          <li><a href="">Trabalhos</a></li>
+          <li><a href="">Sobre</a></li>
+          <li><a href="">Contato</a></li>
         </ul>
       </nav>
       <button
@@ -42,9 +42,9 @@
     </header>
 
     <main class="container mb-16 max-md:mt-8">
-      <div class="md:py-8 lg:px-26 lg:py-8 mb-8">
+      <div class="md:py-8 lg:px-16 lg:py-8 mb-8">
         <h1
-          class="text-preto-200 font-medium text-4xl md:text-8xl text-balance max-w-screen-sm mb-8"
+          class="text-preto-200 font-medium text-4xl md:text-8xl text-balance max-w-screen-lg mb-8"
         >
           Seu mundo criativo começa aqui
         </h1>
@@ -68,7 +68,7 @@
       </div>
     </main>
 
-    <section class="container mb-16">
+    <section class="container mb-16" aria-label="Trabalhos">
       <div class="md:flex justify-between items-end mb-10">
         <div>
           <h1
@@ -172,7 +172,7 @@
       </div>
     </section>
 
-    <section class="container mb-16 md:mb-20">
+    <section class="container mb-16 md:mb-20" aria-label="Serviços">
       <div class="md:flex justify-between items-end mb-10 md:mb-16">
         <div>
           <h1
@@ -295,11 +295,12 @@
     </section>
 
     <section
-      class="container mb-16 md:mb-20 lg:flex justify-between items-center gap-8"
+      class="container mb-16 md:mb-20 grid grid-cols-1 lg:grid-cols-[500px_1fr] items-center gap-4"
+      aria-label="Juntos, podemos!"
     >
       <div class="mb-8 lg:mb-0">
         <h1
-          class="text-preto-200 font-medium text-3xl md:text-8xl text-balance max-w-screen-sm"
+          class="text-preto-200 font-medium text-3xl md:text-8xl text-balance"
         >
           Juntos, podemos...
         </h1>
@@ -308,37 +309,43 @@
       <div>
         <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
           <li class="flex gap-3 items-center">
-            <span class="size-1 rounded-full bg-verde-400"></span>Crie uma
-            presença digital forte com sites que combinam design e performance
+            <span class="shrink-0 size-2 rounded-full bg-verde-400"></span>Crie
+            uma presença digital forte com sites que combinam design e
+            performance
           </li>
           <li class="flex gap-3 items-center">
-            <span class="size-1 rounded-full bg-verde-400"></span>Conte
+            <span class="shrink-0 size-2 rounded-full bg-verde-400"></span>Conte
             histórias impactantes com vídeos que conectam sua marca ao público
             certo
           </li>
           <li class="flex gap-3 items-center">
-            <span class="size-1 rounded-full bg-verde-400"></span>Fortaleça sua
-            identidade visual com designs que transmitem confiança e estilo
+            <span class="shrink-0 size-2 rounded-full bg-verde-400"></span
+            >Fortaleça sua identidade visual com designs que transmitem
+            confiança e estilo
           </li>
           <li class="flex gap-3 items-center">
-            <span class="size-1 rounded-full bg-verde-400"></span>Transforme sua
-            visão em experiências visuais envolventes e memoráveis
+            <span class="shrink-0 size-2 rounded-full bg-verde-400"></span
+            >Transforme sua visão em experiências visuais envolventes e
+            memoráveis
           </li>
         </ul>
       </div>
     </section>
 
     <section
-      class="container py-20 mb-16 lg:flex justify-between gap-8 items-start border-t border-neutral-300"
+      class="container py-16 md:py-20 lg:flex justify-between gap-8 items-start border-t border-neutral-300"
+      aria-label="feedback"
     >
-      <div class="mb-16">
+      <div class="max-lg:mb-16">
         <div class="mb-8">
           <p
             class="text-preto-200 text-xl md:text-3xl text-balance max-w-screen-lg max-md:mb-8 font-medium"
           >
-            "De sites modernos e funcionais a vídeos criativos e impactantes,
-            passando por identidades visuais que fortalecem marcas criamos tudo
-            com foco em estética, performance e conexão real com o público."
+            "Trabalhar com a Planet foi uma das melhores decisões que tomamos
+            para o WebFlux. Eles entenderam exatamente o que queríamos, criaram
+            um site moderno, rápido e com um visual impecável. O processo foi
+            super tranquilo, e a entrega superou todas as expectativas. Hoje
+            temos uma presença digital forte e profissional graças a eles!"
           </p>
         </div>
 
@@ -363,15 +370,15 @@
         <div class="mb-6">
           <img
             class="rounded-md size-full object-cover"
-            src="./img/projetos/eSports.png"
+            src="./img/projetos/webflux.png"
             alt="eSports"
             width="421"
-            height="272"
+            height="281"
           />
         </div>
 
         <div>
-          <h3 class="text-lg font-medium text-preto-300 mb-2">eSports</h3>
+          <h3 class="text-lg font-medium text-preto-300 mb-2">WebFlux</h3>
           <a
             href="#"
             class="text-preto-200 relative inline-block w-fit text-xl font-medium group whitespace-nowrap"
@@ -387,5 +394,50 @@
         </div>
       </div>
     </section>
+
+    <footer class="container py-16 md:py-20 grid grid-cols-1 lg:grid-cols-[500px_1fr] gap-16 items-start border-t border-neutral-800">
+      <div>
+        <h2 class="text-preto-300 text-xl md:text-3xl mb-2">
+          Venha trabalhar conosco!
+        </h2>
+        <a
+          href="#"
+          class="text-preto-200 relative inline-block w-fit text-xl md:text-4xl font-medium group whitespace-nowrap"
+        >
+          sac@planet.com.br
+          <span class="absolute -bottom-3 left-0 h-[2px] w-full bg-verde-400 origin-left scale-x-100 transition-transform duration-500 group-hover:scale-x-0 will-change-transform pointer-events-none"></span>
+          <span class="absolute -bottom-3 left-0 h-[2px] w-full bg-verde-400 origin-right scale-x-0 transition-transform duration-500 delay-200 group-hover:scale-x-100 will-change-transform pointer-events-none"></span>
+        </a>
+      </div>
+    
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16 lg:justify-self-end">
+        <div>
+          <h2 class="text-xl font-medium text-preto-300 mb-4">Navegação</h2>
+          <ul class="space-y-2 text-preto-200 *:hover:text-neutral-500">
+            <li><a href="">Serviços</a></li>
+            <li><a href="">Trabalhos</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+          </ul>
+        </div>
+    
+        <div>
+          <h2 class="text-xl font-medium text-preto-300 mb-4">Redes</h2>
+          <ul class="space-y-2 text-preto-200 *:hover:text-neutral-500">
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Linkedin</a></li>
+            <li><a href="">Behance</a></li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="col-span-1 md:col-span-2">
+        <p class="text-preto-300">© 2025 Planet — Sua marca se destacando. <a href="#" class="text-verde-400 hover:underline">Privacidade</a></p>
+      </div>
+
+      <div class="col-span-1 md:col-span-2 justify-self-center">
+        <a href="#navbar" class="text-preto-300 font-medium text-2xl flex items-center gap-2">Voltar para o topo <img class="animate-bounce" src="./img/up-arrow.svg" alt="voltar ao topo" width="40" height="40"></a>
+      </div>
+    </footer>
   </body>
 </html>
