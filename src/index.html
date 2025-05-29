@@ -32,30 +32,39 @@
           />
         </a>
       </div>
-      <nav class="hidden md:block" aria-label="Navegação principal">
+      <nav
+        id="mobile-menu"
+        class="hidden md:block z-40 max-lg:fixed max-lg:w-full max-lg:inset-0 items-center"
+        aria-label="Navegação principal"
+      >
+        <div
+          class="fixed inset-0 bg-preto-200/90 backdrop-blur-md lg:hidden"
+        ></div>
+
         <ul
-          class="flex items-center gap-8 text-preto-200 *:font-medium *:hover:text-neutral-500 font-serif"
+          class="lg:flex text-2xl lg:flex-wrap lg:gap-8 text-white md:text-preto-200 lg:text-xl max-lg:z-50 max-lg:absolute max-lg:divide-y-2 max-lg:divide-white/10 max-lg:p-8 max-lg:w-full *:lg:hover:text-neutral-500"
         >
           <li class="animate-slide-in opacity-0 animate-1">
-            <a href="#servicos">Serviços</a>
+            <a class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2" href="#servicos">Serviços</a>
           </li>
           <li class="animate-slide-in opacity-0 animate-2">
-            <a href="./trabalhos.html">Trabalhos</a>
+            <a class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2" href="./trabalhos.html">Trabalhos</a>
           </li>
           <li class="animate-slide-in opacity-0 animate-3">
-            <a href="/sobre.html">Sobre</a>
+            <a class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2" href="/sobre.html">Sobre</a>
           </li>
           <li class="animate-slide-in opacity-0 animate-4">
-            <a href="/contato.html">Contato</a>
+            <a class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2" href="/contato.html">Contato</a>
           </li>
         </ul>
       </nav>
       <button
         id="mobile-button"
-        class="flex items-center font-medium gap-2 md:hidden"
+        class="grid grid-cols-1 font-medium gap-2 md:hidden bg-preto-200/40 p-4 rounded-full cursor-pointer max-md:fixed max-md:right-4"
       >
-        <span class="size-2 rounded-full bg-verde-300"></span>
-        Menu
+        <span class="w-6 h-[2px] bg-neutral-300"></span>
+        <span class="w-6 h-[2px] bg-neutral-300"></span>
+        <span class="w-6 h-[2px] bg-neutral-300"></span>
       </button>
     </header>
 
@@ -220,7 +229,7 @@
             href="#"
             class="text-preto-200 relative inline-block w-fit text-xl md:text-3xl font-medium group whitespace-nowrap font-sans opacity-0 animate-fade-in animate-3"
           >
-            Veja Todos Os Serviços
+            Veja todos os serviços
             <span
               class="absolute -bottom-3 left-0 h-[2px] w-full bg-verde-400 origin-left scale-x-100 transition-transform duration-500 group-hover:scale-x-0 will-change-transform pointer-events-none"
             ></span>
@@ -512,5 +521,20 @@
         /></a>
       </div>
     </footer>
+
+    <script>
+      const mobileButton = document.getElementById('mobile-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+      });
+
+      mobileMenu.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+      });
+    </script>
   </body>
 </html>
