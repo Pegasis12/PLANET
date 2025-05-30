@@ -34,7 +34,7 @@
       </div>
       <nav
         id="mobile-menu"
-        class="hidden md:block z-40 max-lg:fixed max-lg:w-full max-lg:inset-0 items-center"
+        class="hidden lg:block z-40 max-lg:fixed max-lg:w-full max-lg:inset-0 items-center"
         aria-label="Navegação principal"
       >
         <div
@@ -45,22 +45,38 @@
           class="lg:flex text-2xl lg:flex-wrap lg:gap-8 text-white md:text-preto-200 lg:text-xl max-lg:z-50 max-lg:absolute max-lg:divide-y-2 max-lg:divide-white/10 max-lg:p-8 max-lg:w-full *:lg:hover:text-neutral-500"
         >
           <li class="animate-slide-in opacity-0 animate-1">
-            <a class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2" href="#servicos">Serviços</a>
+            <a
+              class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2"
+              href="#servicos"
+              >Serviços</a
+            >
           </li>
           <li class="animate-slide-in opacity-0 animate-2">
-            <a class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2" href="./trabalhos.html">Trabalhos</a>
+            <a
+              class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2"
+              href="trabalhos.html"
+              >Trabalhos</a
+            >
           </li>
           <li class="animate-slide-in opacity-0 animate-3">
-            <a class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2" href="/sobre.html">Sobre</a>
+            <a
+              class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2"
+              href="sobre.html"
+              >Sobre</a
+            >
           </li>
           <li class="animate-slide-in opacity-0 animate-4">
-            <a class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2" href="/contato.html">Contato</a>
+            <a
+              class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2"
+              href="contato.html"
+              >Contato</a
+            >
           </li>
         </ul>
       </nav>
       <button
         id="mobile-button"
-        class="grid grid-cols-1 font-medium gap-2 md:hidden bg-preto-200/40 p-4 rounded-full cursor-pointer max-md:fixed max-md:right-4"
+        class="lg:hidden grid grid-cols-1 font-medium gap-2 bg-preto-200/40 p-4 rounded-full cursor-pointer max-md:fixed max-md:right-2 animate-fade-in opacity-0 animate-4 z-50"
       >
         <span class="w-6 h-[2px] bg-neutral-300"></span>
         <span class="w-6 h-[2px] bg-neutral-300"></span>
@@ -240,12 +256,12 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div
           class="border border-neutral-300 overflow-hidden rounded-md cursor-pointer group hover:shadow-xl transition duration-300 opacity-0 animate-fade-in animate-1"
         >
           <div
-            class="flex items-center justify-between p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
+            class="flex items-center gap-2 justify-between p-2 lg:p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
           >
             <h2
               class="text-preto-200 font-medium text-2xl lg:text-3xl font-sans"
@@ -263,7 +279,7 @@
               ></span>
             </a>
           </div>
-          <div class="p-4 text-balance">
+          <div class="p-2 lg:p-4 text-balance">
             <p class="text-preto-300 font-serif">
               Desenvolvemos sites modernos, responsivos e pensados para
               performance. Sua presença online com visual profissional e
@@ -276,7 +292,7 @@
           class="border border-neutral-300 rounded-md cursor-pointer group overflow-hidden hover:shadow-xl transition duration-300 opacity-0 animate-fade-in animate-2"
         >
           <div
-            class="flex items-center justify-between p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
+            class="flex items-center gap-2 justify-between p-2 lg:p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
           >
             <h2
               class="text-preto-200 font-medium text-2xl lg:text-3xl font-sans"
@@ -294,7 +310,7 @@
               ></span>
             </a>
           </div>
-          <div class="p-4 text-balance">
+          <div class="p-2 lg:p-4 text-balance">
             <p class="text-preto-300 font-serif">
               Criamos identidades visuais, peças gráficas e layouts
               personalizados que traduzem a essência da sua marca com estilo e
@@ -307,7 +323,7 @@
           class="border border-neutral-300 rounded-md cursor-pointer group overflow-hidden hover:shadow-xl transition duration-300 opacity-0 animate-fade-in animate-3"
         >
           <div
-            class="flex items-center justify-between p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
+            class="flex items-center justify-between gap-2 p-2 lg:p-4 border-b border-neutral-300 group-hover:bg-gray-100 transition duration-300"
           >
             <h2
               class="text-preto-200 font-medium text-2xl lg:text-3xl font-sans"
@@ -325,7 +341,7 @@
               ></span>
             </a>
           </div>
-          <div class="p-4 text-balance">
+          <div class="p-2 lg:p-4 text-balance">
             <p class="text-preto-300 font-serif">
               Produzimos vídeos criativos e envolventes, ideais para apresentar
               sua marca, produtos ou serviços com impacto visual e storytelling.
@@ -458,7 +474,7 @@
           Venha trabalhar conosco!
         </h2>
         <a
-          href="#"
+          href="mailto:sac@planet.com.br"
           class="text-preto-200 relative inline-block w-fit text-xl md:text-4xl font-medium group whitespace-nowrap font-sans"
         >
           sac@planet.com.br
@@ -480,9 +496,9 @@
             class="space-y-2 text-preto-200 *:hover:text-neutral-500 font-serif"
           >
             <li><a href="#servicos">Serviços</a></li>
-            <li><a href="./trabalhos.html">Trabalhos</a></li>
-            <li><a href="./sobre.html">Sobre</a></li>
-            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="trabalhos.html">Trabalhos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
           </ul>
         </div>
 
@@ -493,9 +509,25 @@
           <ul
             class="space-y-2 text-preto-200 *:hover:text-neutral-500 font-serif"
           >
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Linkedin</a></li>
-            <li><a href="">Behance</a></li>
+            <li>
+              <a href="https://www.instagram.com/agenciaplanet/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/ag%C3%AAncia-planet/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.behance.net/agenciaplanetoficial"
+                target="_blank"
+                >Behance</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -521,20 +553,6 @@
         /></a>
       </div>
     </footer>
-
-    <script>
-      const mobileButton = document.getElementById('mobile-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-
-      mobileButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        mobileMenu.classList.toggle('flex');
-      });
-
-      mobileMenu.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        mobileMenu.classList.remove('flex');
-      });
-    </script>
+    <script src="nav.js"></script>
   </body>
 </html>

@@ -45,6 +45,9 @@
   @media(width >= 40rem){
     padding: 0 1rem;
   }
+  @media(width >= 96rem){
+    padding: 0 8rem;
+  }
 }
 
 /* o delay se cria com utilidade tbm */

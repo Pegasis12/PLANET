@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="icon" href="./img/favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="A Planet é uma agência criativa que desenvolve sites, vídeos e designs com foco em estética, performance e conexão real com o público."
+    />
+    <title>Planet - Sobre</title>
+  </head>
+  <body>
+    <header
+      id="navbar"
+      class="flex items-center justify-between gap-8 py-8 container"
+    >
+      <div>
+        <a href="./index.html">
+          <img
+            src="./img/iconepretoplanet.svg"
+            alt="logo planet"
+            width="50"
+            height="50"
+          />
+        </a>
+      </div>
+      <nav
+        id="mobile-menu"
+        class="hidden lg:block z-40 max-lg:fixed max-lg:w-full max-lg:inset-0 items-center"
+        aria-label="Navegação principal"
+      >
+        <div
+          class="fixed inset-0 bg-preto-200/90 backdrop-blur-md lg:hidden"
+        ></div>
+
+        <ul
+          class="lg:flex text-2xl lg:flex-wrap lg:gap-8 text-white md:text-preto-200 lg:text-xl max-lg:z-50 max-lg:absolute max-lg:divide-y-2 max-lg:divide-white/10 max-lg:p-8 max-lg:w-full *:lg:hover:text-neutral-500"
+        >
+          <li class="animate-slide-in opacity-0 animate-1">
+            <a
+              class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2"
+              href="#servicos"
+              >Serviços</a
+            >
+          </li>
+          <li class="animate-slide-in opacity-0 animate-2">
+            <a
+              class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2"
+              href="trabalhos.html"
+              >Trabalhos</a
+            >
+          </li>
+          <li class="animate-slide-in opacity-0 animate-3">
+            <a
+              class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2"
+              href="sobre.html"
+              >Sobre</a
+            >
+          </li>
+          <li class="animate-slide-in opacity-0 animate-4">
+            <a
+              class="p-4 block max-lg:hover:bg-white/10 lg:px-0 lg:py-2"
+              href="contato.html"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <button
+        id="mobile-button"
+        class="lg:hidden grid grid-cols-1 font-medium gap-2 bg-preto-200/40 p-4 rounded-full cursor-pointer max-md:fixed max-md:right-2 animate-fade-in opacity-0 animate-4 z-50"
+      >
+        <span class="w-6 h-[2px] bg-neutral-300"></span>
+        <span class="w-6 h-[2px] bg-neutral-300"></span>
+        <span class="w-6 h-[2px] bg-neutral-300"></span>
+      </button>
+    </header>
+
+    <main class="container mb-16 max-md:mt-8">
+      <div class="md:py-8 lg:px-16 lg:py-8 mb-8 md:mb-16">
+        <h1
+          class="text-preto-200 font-sans font-medium text-4xl md:text-8xl text-balance max-w-screen-lg mb-8 opacity-0 animate-fade-in animate-1"
+        >
+          Quem somos
+        </h1>
+        <p
+          class="text-base font-serif md:text-xl text-balance max-w-screen-lg text-preto-300 opacity-0 animate-fade-in animate-2"
+        >
+          A Planet é uma agência criativa que surgiu com a missão de tornar o
+          processo de criação mais simples, ágil e impactante. Acreditamos que
+          design bem-feito transforma a forma como marcas se conectam com seu
+          público. Por isso, unimos tecnologia, estratégia e criatividade para
+          entregar sites, vídeos e identidades visuais que se destacam sempre
+          com foco em qualidade, resultado e experiência.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 items-center">
+        <div class="opacity-0 animate-fade-in animate-1">
+          <div class="relative overflow-hidden rounded-md cursor-pointer group mb-2">
+            <img
+              class="size-full object-cover group-hover:scale-110 transition-transform"
+              src="./img/integrantes/pablo.jpg"
+              alt="Canoagem"
+            />
+            <div
+              class="absolute flex items-end p-4 inset-0 bg-gradient-to-t from-preto-200/80 opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+              <span class="text-verde-400 hover:underline"><a href="#">Linkedin</a></span>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-preto-200 font-medium text-lg font-sans mb-1">
+              Pablo
+            </h2>
+            <p class="text-preto-300 text-xs font-serif">
+              Desenvolvedor Front-End
+            </p>
+          </div>
+        </div>
+
+        <div class="opacity-0 animate-fade-in animate-2">
+          <div class="relative overflow-hidden rounded-md cursor-pointer group mb-2">
+            <img
+              class="size-full object-cover group-hover:scale-110 transition-transform"
+              src="./img/integrantes/alex.jpg"
+              alt="Canoagem"
+            />
+            <div
+              class="absolute flex items-end p-4 inset-0 bg-gradient-to-t from-preto-200/80 opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+              <span class="text-verde-400 hover:underline"><a href="#">Linkedin</a></span>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-preto-200 font-medium text-lg font-sans mb-1">
+              Alex
+            </h2>
+            <p class="text-preto-300 text-xs font-serif">Designer Gráfico</p>
+          </div>
+        </div>
+
+        <div class="opacity-0 animate-fade-in animate-3">
+          <div class="relative overflow-hidden rounded-md cursor-pointer group mb-2">
+            <img
+              class="size-full object-cover group-hover:scale-110 transition-transform"
+              src="./img/integrantes/laura.jpg"
+              alt="Canoagem"
+            />
+            <div
+              class="absolute flex items-end p-4 inset-0 bg-gradient-to-t from-preto-200/80 opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+              <span class="text-verde-400 hover:underline"><a href="#">Linkedin</a></span>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-preto-200 font-medium text-lg font-sans mb-1">
+              Laura
+            </h2>
+            <p class="text-preto-300 text-xs font-serif">Designer Gráfico</p>
+          </div>
+        </div>
+
+        <div class="opacity-0 animate-fade-in animate-4">
+          <div class="relative overflow-hidden rounded-md cursor-pointer group mb-2">
+            <img
+              class="size-full object-cover group-hover:scale-110 transition-transform"
+              src="./img/integrantes/arthur.jpg"
+              alt="Canoagem"
+            />
+            <div
+              class="absolute flex items-end p-4 inset-0 bg-gradient-to-t from-preto-200/80 opacity-0 group-hover:opacity-100 transition-opacity"
+            >
+              <span class="text-verde-400 hover:underline"><a href="#">Linkedin</a></span>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-preto-200 font-medium text-lg font-sans mb-1">
+              Arthur
+            </h2>
+            <p class="text-preto-300 text-xs font-serif">VideoMaker</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="container mb-16" aria-label="Conquistas">
+      <div
+        class="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-4 justify-between max-md:divide-y-2 max-md:divide-neutral-200"
+      >
+        <div
+          class="max-md:flex max-md:items-center max-md:justify-between max-md:flex-row-reverse opacity-0 animate-fade-in animate-1"
+        >
+          <h2
+            class="text-preto-200 font-sans font-medium text-xl md:text-8xl text-balance mb-2 opacity-0 animate-fade-in animate-1"
+          >
+            99+
+          </h2>
+          <p
+            class="text-xl lg:text-base font-serif md:text-xl text-balance text-preto-300 opacity-0 animate-fade-in animate-2"
+          >
+            Clientes
+          </p>
+        </div>
+
+        <div
+          class="max-md:flex max-md:items-center max-md:justify-between max-md:flex-row-reverse opacity-0 animate-fade-in animate-2"
+        >
+          <h2
+            class="text-preto-200 font-sans font-medium text-xl md:text-8xl text-balance mb-2 opacity-0 animate-fade-in animate-1"
+          >
+            10K+
+          </h2>
+          <p
+            class="text-xl lg:text-base font-serif md:text-xl text-balance text-preto-300 opacity-0 animate-fade-in animate-2"
+          >
+            Visualizações
+          </p>
+        </div>
+
+        <div
+          class="max-md:flex max-md:items-center max-md:justify-between max-md:flex-row-reverse opacity-0 animate-fade-in animate-3"
+        >
+          <h2
+            class="text-preto-200 font-sans font-medium text-xl md:text-8xl text-balance mb-2 opacity-0 animate-fade-in animate-1"
+          >
+            500+
+          </h2>
+          <p
+            class="text-xl lg:text-base font-serif md:text-xl text-balance text-preto-300 opacity-0 animate-fade-in animate-2"
+          >
+            Projetos
+          </p>
+        </div>
+
+        <div
+          class="max-md:flex max-md:items-center max-md:justify-between max-md:flex-row-reverse opacity-0 animate-fade-in animate-4"
+        >
+          <h2
+            class="text-preto-200 font-sans font-medium text-xl md:text-8xl text-balance mb-2 opacity-0 animate-fade-in animate-1"
+          >
+            6+
+          </h2>
+          <p
+            class="text-xl lg:text-base font-serif md:text-xl text-balance text-preto-300 opacity-0 animate-fade-in animate-2"
+          >
+            Anos de Mercado
+          </p>
+        </div>
+
+        <div
+          class="max-md:flex max-md:items-center max-md:justify-between max-md:flex-row-reverse opacity-0 animate-fade-in animate-4"
+        >
+          <h2
+            class="text-preto-200 font-sans font-medium text-xl md:text-8xl text-balance mb-2 opacity-0 animate-fade-in animate-1"
+          >
+            30+
+          </h2>
+          <p
+            class="text-xl lg:text-base font-serif md:text-xl text-balance text-preto-300 opacity-0 animate-fade-in animate-2"
+          >
+            Prêmios
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="container mb-16 grid grid-cols-1 lg:grid-cols-[1fr_400px] items-start gap-8"
+      aria-label="Onde queremos chegar?"
+    >
+      <div>
+        <p
+          class="text-base font-serif md:text-xl text-balance max-w-screen-sm text-preto-300 opacity-0 animate-fade-in animate-2"
+        >
+          Queremos ser referência em criatividade e resultado. Nosso objetivo é
+          continuar evoluindo, ampliando nosso impacto e ajudando cada vez mais
+          marcas a se destacarem com sites inteligentes, vídeos marcantes e
+          design que realmente comunica. Buscamos crescer junto com nossos
+          clientes, sem perder o que nos move: agilidade, qualidade e visão
+          criativa.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4">
+        <a
+          href="https://www.instagram.com/agenciaplanet/"
+          target="_blank"
+          class="grid grid-cols-[auto_1fr] border border-neutral-300 rounded-md p-4 opacity-0 animate-fade-in animate-2 hover:shadow-xl transition duration-300"
+        >
+          <div>
+            <h2
+              class="flex gap-2 items-center text-xl font-medium text-preto-200 font-sans mb-1"
+            >
+              <span class="size-3 rounded-full bg-verde-400 font-serif"></span
+              >Instagram
+            </h2>
+            <p class="font-serif text-preto-300 text-sm">
+              Conheça nosso Instagram
+            </p>
+          </div>
+          <div class="justify-self-end">
+            <img src="./img/top-right.svg" width="8" alt="" />
+          </div>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/ag%C3%AAncia-planet/"
+          target="_blank"
+          class="grid grid-cols-[auto_1fr] border border-neutral-300 rounded-md p-4 opacity-0 animate-fade-in animate-1 hover:shadow-xl transition duration-300"
+        >
+          <div>
+            <h2
+              class="flex gap-2 items-center text-xl font-medium text-preto-200 font-sans mb-1"
+            >
+              <span class="size-3 rounded-full bg-verde-400 font-serif"></span
+              >Linkedin
+            </h2>
+            <p class="font-serif text-preto-300 text-sm">
+              Conheça nosso Linkedin
+            </p>
+          </div>
+          <div class="justify-self-end">
+            <img src="./img/top-right.svg" width="8" alt="" />
+          </div>
+        </a>
+
+        <a
+          href="https://www.behance.net/agenciaplanetoficial"
+          target="_blank"
+          class="grid grid-cols-[auto_1fr] border border-neutral-300 rounded-md p-4 opacity-0 animate-fade-in animate-3 hover:shadow-xl transition duration-300"
+        >
+          <div>
+            <h2
+              class="flex gap-2 items-center text-xl font-medium text-preto-200 font-sans mb-1"
+            >
+              <span class="size-3 rounded-full bg-verde-400 font-serif"></span
+              >Behance
+            </h2>
+            <p class="font-serif text-preto-300 text-sm">
+              Conheça nosso Behance
+            </p>
+          </div>
+          <div class="justify-self-end">
+            <img src="./img/top-right.svg" width="8" alt="" />
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <footer
+      class="container py-16 md:py-20 grid grid-cols-1 lg:grid-cols-[500px_1fr] gap-16 items-start border-t border-neutral-800"
+    >
+      <div>
+        <h2 class="text-preto-300 text-xl md:text-2xl mb-2 font-serif">
+          Venha trabalhar conosco!
+        </h2>
+        <a
+          href="mailto:sac@planet.com.br"
+          class="text-preto-200 relative inline-block w-fit text-xl md:text-4xl font-medium group whitespace-nowrap font-sans"
+        >
+          sac@planet.com.br
+          <span
+            class="absolute -bottom-3 left-0 h-[2px] w-full bg-verde-400 origin-left scale-x-100 transition-transform duration-500 group-hover:scale-x-0 will-change-transform pointer-events-none"
+          ></span>
+          <span
+            class="absolute -bottom-3 left-0 h-[2px] w-full bg-verde-400 origin-right scale-x-0 transition-transform duration-500 delay-200 group-hover:scale-x-100 will-change-transform pointer-events-none"
+          ></span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 gap-16 lg:justify-self-end">
+        <div>
+          <h2 class="text-xl font-medium text-preto-300 mb-4 font-sans">
+            Navegação
+          </h2>
+          <ul
+            class="space-y-2 text-preto-200 *:hover:text-neutral-500 font-serif"
+          >
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="trabalhos.html">Trabalhos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-medium text-preto-300 mb-4 font-sans">
+            Redes
+          </h2>
+          <ul
+            class="space-y-2 text-preto-200 *:hover:text-neutral-500 font-serif"
+          >
+            <li>
+              <a href="https://www.instagram.com/agenciaplanet/" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/company/ag%C3%AAncia-planet/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.behance.net/agenciaplanetoficial"
+                target="_blank"
+                >Behance</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-span-1 md:col-span-2">
+        <p class="text-preto-300 font-serif">
+          © 2025 Planet — Sua marca se destacando.
+          <a href="#" class="text-verde-400 hover:underline">Privacidade</a>
+        </p>
+      </div>
+
+      <div class="col-span-1 md:col-span-2 justify-self-center">
+        <a
+          href="#navbar"
+          class="text-preto-300 font-medium text-2xl flex items-center gap-2 font-sans"
+          >Voltar para o topo
+          <img
+            class="animate-bounce"
+            src="./img/up-arrow.svg"
+            alt="voltar ao topo"
+            width="40"
+            height="40"
+        /></a>
+      </div>
+    </footer>
+    <script src="nav.js"></script>
+  </body>
+</html>
