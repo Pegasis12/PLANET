@@ -70,5 +70,11 @@
 /* inidicando que estão na camada de componentes */
 /* o theme da versão 3 ira ficar depreciado, pra isso usamos outra solucao que é usar a variavel css, o bg-gradient tbm esta depreciado agora é bg-linear pois tem mais gradiente incluindo o radial*/
 @layer components{
+  .btn{
+    @apply py-2 px-6 rounded-md bg-verde-400 text-preto-200 cursor-pointer hover:contrast-120;
+  }
 
+  .input{
+    @apply border-b-2 border-neutral-300 p-2 text-preto-300 outline-none focus:border-b-preto-200 placeholder:text-neutral-500;
+  }
 }
