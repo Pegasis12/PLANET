@@ -15,7 +15,7 @@
       name="description"
       content="A Planet é uma agência criativa que desenvolve sites, vídeos e designs com foco em estética, performance e conexão real com o público."
     />
-    <title>Planet - Contato</title>
+    <title>Planet - Projetos</title>
   </head>
   <body>
     <header
@@ -96,113 +96,32 @@
       </button>
     </header>
 
-    <main class="container mb-16 max-md:mt-8 border-b border-neutral-300">
-      <div
-        class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-4 md:py-8 lg:px-16 lg:py-8 lg:mb-8 max-md:mb-16 items-center"
-      >
-        <div class="mb-8">
-          <h1
-            class="text-preto-200 font-sans font-medium text-4xl md:text-8xl text-balance max-w-screen-sm mb-8 opacity-0 animate-fade-in animate-1"
-          >
-            Vamos conversar?
-          </h1>
-          <p
-            class="text-base font-serif md:text-xl text-balance text-preto-300 opacity-0 animate-fade-in animate-2"
-          >
-            Entre em contato com a nossa equipe, estamos prontos para entender
-            seu projeto e transformar suas ideias em algo incrível.
-          </p>
-        </div>
+    <main class="container mb-8 max-md:mt-8">
+      <div class="md:py-8 lg:py-8 mb-8">
+        <h1
+          class="text-preto-200 font-sans font-medium text-4xl md:text-8xl text-balance max-w-screen-lg mb-8 opacity-0 animate-fade-in animate-1"
+        >
+          Projetos
+        </h1>
 
-        <form class="grid gap-4 rounded-md lg:p-8" action="">
-          <div class="grid gap-1">
-            <label class="text-preto-200 hidden" for="nome">Nome</label>
-            <input
-              id="nome"
-              name="nome"
-              class="input"
-              type="text"
-              placeholder="Nome"
-            />
-          </div>
-
-          <div class="grid gap-4 xl:grid-cols-2">
-            <div class="grid gap-1">
-              <label class="text-preto-200 hidden" for="email">Email</label>
-              <input
-                id="email"
-                name="email"
-                class="input"
-                type="email"
-                placeholder="E-mail"
-              />
-            </div>
-
-            <div class="grid gap-1">
-              <label class="text-preto-200 hidden" for="telefone"
-                >Telefone</label
-              >
-              <input
-                id="telefone"
-                name="telefone"
-                class="input"
-                placeholder="(21) 00000-0000"
-                type="text"
-              />
-            </div>
-          </div>
-          <div class="grid gap-1">
-            <label class="text-preto-200 hidden" for="mensagem">Mensagem</label>
-            <textarea
-              id="mensagem"
-              name="mensagem"
-              rows="5"
-              class="input resize-none"
-              type="text"
-              placeholder="Mensagem"
-            ></textarea>
-          </div>
-          <button class="btn">Enviar</button>
-          <span
-            class="place-self-center font-serif text-xs text-neutral-500 text-center text-balance"
-            >Entraremos em contato com você em até 24 horas de um dia útil</span
-          >
-        </form>
+        <nav>
+          <ul class="flex flex-col lg:flex-row gap-4 lg:gap-8 text-xl lg:text-2xl text-preto-300 font-medium *:hover:text-neutral-500 font-sans">
+            <li>Todos</li>
+            <li>Sites</li>
+            <li>Designer</li>
+            <li>Vídeos</li>
+          </ul>
+        </nav>
       </div>
     </main>
 
-    <section class="container mb-16" aria-label="Trabalhos">
-      <div class="md:flex justify-between items-center mb-10">
-        <div class="max-md:mb-8">
-          <h1
-            class="text-preto-200 font-sans font-medium text-3xl opacity-0 animate-fade-in animate-1"
-          >
-            Veja mais alguns trabalhos
-          </h1>
-        </div>
-
-        <div>
-          <a
-            href="#"
-            class="text-preto-200 relative inline-block w-fit text-xl md:text-3xl font-medium group whitespace-nowrap font-sans opacity-0 animate-fade-in animate-3"
-          >
-            Ver todos os projetos
-            <span
-              class="absolute -bottom-3 left-0 h-[2px] w-full bg-verde-400 origin-left scale-x-100 transition-transform duration-500 group-hover:scale-x-0 will-change-transform pointer-events-none"
-            ></span>
-            <span
-              class="absolute -bottom-3 left-0 h-[2px] w-full bg-verde-400 origin-right scale-x-0 transition-transform duration-500 delay-200 group-hover:scale-x-100 will-change-transform pointer-events-none"
-            ></span>
-          </a>
-        </div>
-      </div>
-
+    <section class="container mb-16 md:mb-20">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
         <div>
           <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
             <img
               class="size-full object-cover group-hover:scale-105 transition-transform duration-400"
-              src="./img/projetos/socialmedia.png"
+              src="./img/projetos/drmari.png"
               loading="lazy"
               alt="Dra Mari"
               width="808"
@@ -211,7 +130,121 @@
           </div>
           <div>
             <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
-              Social media
+              Dra Mari
+            </h2>
+            <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
+            <img
+              class="size-full object-cover group-hover:scale-105 transition-transform duration-400"
+              src="./img/projetos/florada.jpg"
+              loading="lazy"
+              alt="Florada"
+              width="808"
+              height="632"
+            />
+          </div>
+          <div>
+            <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+              Florada
+            </h2>
+            <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
+            <img
+              class="size-full object-cover group-hover:scale-105 transition-transform duration-400"
+              src="./img/projetos/50anos.jpg"
+              alt="50 anos HEATING COOLING"
+              loading="lazy"
+              width="808"
+              height="632"
+            />
+          </div>
+          <div>
+            <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+              50 anos Heating Cooling
+            </h2>
+            <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
+            <img
+              class="size-full object-cover group-hover:scale-105 transition-transform duration-400"
+              src="./img/projetos/romildaborges.png"
+              alt="Romilda Borges Semijoias"
+              loading="lazy"
+              width="808"
+              height="632"
+            />
+          </div>
+          <div>
+            <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+              Romilda Borges Semijóias
+            </h2>
+            <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
+            <img
+              class="size-full object-cover group-hover:scale-105 transition-transform duration-400"
+              src="./img/projetos/janaina.png"
+              alt="Janaina Netto"
+              loading="lazy"
+              width="808"
+              height="632"
+            />
+          </div>
+          <div>
+            <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+              Janaina Netto
+            </h2>
+            <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
+            <img
+              class="size-full object-cover group-hover:scale-105 transition-transform duration-400"
+              src="./img/projetos/life.png"
+              alt="Agencia Life"
+              loading="lazy"
+              width="808"
+              height="632"
+            />
+          </div>
+          <div>
+            <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+              Agência Life
+            </h2>
+            <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
+            <img
+              class="size-full object-cover group-hover:scale-105 transition-transform duration-400"
+              src="./img/projetos/socialmedia.png"
+              alt="Social media"
+              loading="lazy"
+              width="808"
+              height="632"
+            />
+          </div>
+          <div>
+            <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+             Social Media
             </h2>
             <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
           </div>
@@ -222,8 +255,8 @@
             <img
               class="size-full object-cover group-hover:scale-105 transition-transform duration-400"
               src="./img/projetos/flaviacarvalho.png"
-              loading="lazy"
               alt="Flavia Carvalho"
+              loading="lazy"
               width="808"
               height="632"
             />
@@ -231,6 +264,44 @@
           <div>
             <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
               Flavia Carvalho
+            </h2>
+            <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
+            <img
+              class="size-full object-cover group-hover:scale-105 transition-transform duration-400"
+              src="./img/projetos/danicruz.png"
+              alt="danicruz"
+              loading="lazy"
+              width="808"
+              height="632"
+            />
+          </div>
+          <div>
+            <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+              Dani Cruz
+            </h2>
+            <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
+            <img
+              class="size-full object-cover group-hover:scale-105 transition-transform duration-400"
+              src="./img/projetos/ecolabel.png"
+              alt="ecolabel"
+              loading="lazy"
+              width="808"
+              height="632"
+            />
+          </div>
+          <div>
+            <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+              Ecolabel
             </h2>
             <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
           </div>
