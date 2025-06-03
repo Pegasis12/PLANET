@@ -18,8 +18,6 @@
     --spacing: 0.25rem;
     --breakpoint-sm: 40rem;
     --breakpoint-lg: 64rem;
-    --breakpoint-xl: 80rem;
-    --breakpoint-2xl: 96rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
@@ -38,8 +36,6 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
-    --text-6xl: 3.75rem;
-    --text-6xl--line-height: 1;
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
     --font-weight-medium: 500;
@@ -342,17 +338,11 @@
   .w-full {
     width: 100%;
   }
-  .max-w-screen-2xl {
-    max-width: var(--breakpoint-2xl);
-  }
   .max-w-screen-lg {
     max-width: var(--breakpoint-lg);
   }
   .max-w-screen-sm {
     max-width: var(--breakpoint-sm);
-  }
-  .max-w-screen-xl {
-    max-width: var(--breakpoint-xl);
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -404,6 +394,9 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .grid-cols-\[auto_1fr\] {
     grid-template-columns: auto 1fr;
   }
@@ -442,9 +435,6 @@
   }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
-  }
-  .gap-60 {
-    gap: calc(var(--spacing) * 60);
   }
   .space-y-2 {
     :where(& > :not(:last-child)) {
@@ -1020,12 +1010,6 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
-  .md\:text-6xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-6xl);
-      line-height: var(--tw-leading, var(--text-6xl--line-height));
-    }
-  }
   .md\:text-8xl {
     @media (width >= 48rem) {
       font-size: var(--text-8xl);
@@ -1063,11 +1047,6 @@
       display: flex;
     }
   }
-  .lg\:grid {
-    @media (width >= 64rem) {
-      display: grid;
-    }
-  }
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
@@ -1078,14 +1057,14 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .lg\:grid-cols-3 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
   .lg\:grid-cols-4 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-  .lg\:grid-cols-\[1fr-auto\] {
-    @media (width >= 64rem) {
-      grid-template-columns: 1fr-auto;
     }
   }
   .lg\:grid-cols-\[1fr_1fr\] {
@@ -1106,16 +1085,6 @@
   .lg\:grid-cols-\[500px_1fr\] {
     @media (width >= 64rem) {
       grid-template-columns: 500px 1fr;
-    }
-  }
-  .lg\:grid-cols-\[auto_1fr\] {
-    @media (width >= 64rem) {
-      grid-template-columns: auto 1fr;
-    }
-  }
-  .lg\:grid-cols-\[auto_auto\] {
-    @media (width >= 64rem) {
-      grid-template-columns: auto auto;
     }
   }
   .lg\:flex-row {
