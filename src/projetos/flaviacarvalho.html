@@ -27,8 +27,8 @@
           <img
             src="../img/planet-logo-preta.svg"
             alt="logo planet"
-            width="130"
-            height="130"
+            width="160"
+            height="160"
           />
         </a>
       </div>
@@ -104,7 +104,7 @@
           Identidade Visual
         </p>
         <h2
-          class="text-preto-200 font-sans font-medium text-4xl md:text-5xl text-balance max-w-screen-lg opacity-0 animate-fade-in animate-1"
+          class="text-preto-200 font-sans font-medium text-3xl md:text-5xl text-balance max-w-screen-lg opacity-0 animate-fade-in animate-1"
         >
           Flavia Carvalho Psicóloga
         </h2>
@@ -119,7 +119,10 @@
       />
     </main>
 
-    <section class="container mb-16" aria-label="Abordagem">
+    <section
+      class="container pb-20 mb-20 border-b border-neutral-300"
+      aria-label="Abordagem"
+    >
       <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-8 mb-8">
         <div>
           <h2
@@ -206,6 +209,77 @@
           height="1086"
           alt="Flavia Carvalho Psicóloga"
         />
+      </div>
+    </section>
+
+    <section class="container mb-16" aria-label="Projetos">
+      <div class="md:flex justify-between items-center mb-10">
+        <div class="max-md:mb-8">
+          <h1
+            class="text-preto-200 font-sans font-medium text-3xl lg:text-5xl opacity-0 animate-fade-in animate-1"
+          >
+            Veja mais alguns Projetos
+          </h1>
+        </div>
+
+        <div>
+          <a
+            href="../projetos.html"
+            class="text-preto-200 relative inline-block w-fit text-xl md:text-3xl font-medium group whitespace-nowrap font-sans opacity-0 animate-fade-in animate-3"
+          >
+            Ver todos os projetos
+            <span
+              class="absolute -bottom-3 left-0 h-[2px] w-full bg-verde-400 origin-left scale-x-100 transition-transform duration-500 group-hover:scale-x-0 will-change-transform pointer-events-none"
+            ></span>
+            <span
+              class="absolute -bottom-3 left-0 h-[2px] w-full bg-verde-400 origin-right scale-x-0 transition-transform duration-500 delay-200 group-hover:scale-x-100 will-change-transform pointer-events-none"
+            ></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+        <div>
+          <a href="../projetos/agencialife.html">
+            <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
+              <img
+                class="size-full object-cover group-hover:scale-105 transition-transform duration-400"
+                src="../img/projetos/life/life.png"
+                loading="lazy"
+                alt="Agencia Life"
+                width="808"
+                height="632"
+              />
+            </div>
+            <div>
+              <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+                Agência Life
+              </h2>
+              <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <a href="../projetos/socialmedia.html">
+            <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
+              <img
+                class="size-full object-cover group-hover:scale-105 transition-transform duration-400"
+                src="../img/projetos/socialmedia/socialmedia.webp"
+                loading="lazy"
+                alt="Social Media"
+                width="808"
+                height="632"
+              />
+            </div>
+            <div>
+              <h2 class="text-preto-200 mb-2 text-xl font-medium font-sans">
+                Social Medía
+              </h2>
+              <p class="text-preto-300 font-serif">Lorem ipsum dolor sit</p>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
