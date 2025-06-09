@@ -25,10 +25,10 @@
       <div>
         <a href="./index.html">
           <img
-            src="./img/planet-logo-preta.svg"
+            src="./img/iconepretoplanet.svg"
             alt="logo planet"
-            width="160"
-            height="160"
+            width="60"
+            height="60"
           />
         </a>
       </div>
@@ -108,25 +108,25 @@
           <ul
             class="flex flex-col lg:flex-row gap-4 lg:gap-8 text-xl lg:text-2xl text-preto-300 font-medium *:hover:text-neutral-500 font-sans *:cursor-pointer"
           >
-            <li class="relative" data-filter="all">
+            <li class="relative w-fit" data-filter="all">
               Todos
               <span
                 class="absolute -bottom-[4px] left-0 w-full h-[2px] bg-verde-400 block"
               ></span>
             </li>
-            <li class="relative" data-filter="website">
+            <li class="relative w-fit" data-filter="website">
               Sites
               <span
                 class="absolute -bottom-[4px] left-0 w-full h-[2px] bg-verde-400 hidden"
               ></span>
             </li>
-            <li class="relative" data-filter="designer">
+            <li class="relative w-fit" data-filter="designer">
               Designer
               <span
                 class="absolute -bottom-[4px] left-0 w-full h-[2px] bg-verde-400 hidden"
               ></span>
             </li>
-            <li class="relative" data-filter="video">
+            <li class="relative w-fit" data-filter="video">
               Vídeos
               <span
                 class="absolute -bottom-[4px] left-0 w-full h-[2px] bg-verde-400 hidden"
@@ -485,7 +485,6 @@
         // Cache DOM elements
         const filterItems = document.querySelectorAll('[data-filter]');
         const projects = document.querySelectorAll('.projeto');
-        const mobileBtn = document.getElementById('mobile-button');
         const nav = document.getElementById('nav');
 
         // Filter projects function
@@ -515,16 +514,6 @@
             const filter = item.getAttribute('data-filter');
             filterProjects(filter);
           });
-        });
-
-        // Mobile menu toggle
-        mobileBtn?.addEventListener('click', () => {
-          const isExpanded = nav.classList.toggle('hidden');
-          mobileBtn.setAttribute('aria-expanded', !isExpanded);
-          mobileBtn.setAttribute(
-            'aria-label',
-            isExpanded ? 'Abrir menu' : 'Fechar menu',
-          );
         });
 
         // Initialize with 'all' filter
