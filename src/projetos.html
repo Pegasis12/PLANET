@@ -106,12 +106,32 @@
 
         <nav>
           <ul
-            class="flex flex-col lg:flex-row gap-4 lg:gap-8 text-xl lg:text-2xl text-preto-300 font-medium *:hover:text-neutral-500 font-sans"
+            class="flex flex-col lg:flex-row gap-4 lg:gap-8 text-xl lg:text-2xl text-preto-300 font-medium *:hover:text-neutral-500 font-sans *:cursor-pointer"
           >
-            <li>Todos</li>
-            <li>Sites</li>
-            <li>Designer</li>
-            <li>Vídeos</li>
+            <li class="relative" data-filter="all">
+              Todos
+              <span
+                class="absolute -bottom-[4px] left-0 w-full h-[2px] bg-verde-400 block"
+              ></span>
+            </li>
+            <li class="relative" data-filter="website">
+              Sites
+              <span
+                class="absolute -bottom-[4px] left-0 w-full h-[2px] bg-verde-400 hidden"
+              ></span>
+            </li>
+            <li class="relative" data-filter="designer">
+              Designer
+              <span
+                class="absolute -bottom-[4px] left-0 w-full h-[2px] bg-verde-400 hidden"
+              ></span>
+            </li>
+            <li class="relative" data-filter="video">
+              Vídeos
+              <span
+                class="absolute -bottom-[4px] left-0 w-full h-[2px] bg-verde-400 hidden"
+              ></span>
+            </li>
           </ul>
         </nav>
       </div>
@@ -119,7 +139,7 @@
 
     <section class="container mb-16 md:mb-20">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
-        <div>
+        <div class="projeto designer">
           <a href="./projetos/agencialife.html">
             <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
               <img
@@ -140,7 +160,7 @@
           </a>
         </div>
 
-        <div>
+        <div class="projeto designer">
           <a href="./projetos/draMari.html">
             <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
               <img
@@ -161,7 +181,7 @@
           </a>
         </div>
 
-        <div>
+        <div class="projeto designer">
           <a href="./projetos/florada.html">
             <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
               <img
@@ -182,7 +202,7 @@
           </a>
         </div>
 
-        <div>
+        <div class="projeto designer">
           <a href="./projetos/heatingcooling.html">
             <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
               <img
@@ -203,7 +223,7 @@
           </a>
         </div>
 
-        <div>
+        <div class="projeto video">
           <a href="./projetos/hinova.html">
             <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
               <img
@@ -224,7 +244,7 @@
           </a>
         </div>
 
-        <div>
+        <div class="projeto designer">
           <a href="./projetos/romildaborges.html">
             <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
               <img
@@ -245,7 +265,7 @@
           </a>
         </div>
 
-        <div>
+        <div class="projeto designer">
           <a href="./projetos/janainanetto.html">
             <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
               <img
@@ -266,7 +286,7 @@
           </a>
         </div>
 
-        <div>
+        <div class="projeto designer">
           <a href="./projetos/socialmedia.html">
             <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
               <img
@@ -287,7 +307,7 @@
           </a>
         </div>
 
-        <div>
+        <div class="projeto designer">
           <a href="./projetos/flaviacarvalho.html">
             <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
               <img
@@ -308,7 +328,7 @@
           </a>
         </div>
 
-        <div>
+        <div class="projeto designer">
           <a href="./projetos/danicruz.html">
             <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
               <img
@@ -329,7 +349,7 @@
           </a>
         </div>
 
-        <div>
+        <div class="projeto designer">
           <a href="./projetos/ecolabel.html">
             <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
               <img
@@ -350,7 +370,7 @@
           </a>
         </div>
 
-        <div>
+        <div class="projeto designer">
           <a href="./projetos/vuni.html">
             <div class="mb-4 rounded-2xl overflow-hidden cursor-pointer group">
               <img
@@ -460,6 +480,57 @@
         /></a>
       </div>
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Cache DOM elements
+        const filterItems = document.querySelectorAll('[data-filter]');
+        const projects = document.querySelectorAll('.projeto');
+        const mobileBtn = document.getElementById('mobile-button');
+        const nav = document.getElementById('nav');
+
+        // Filter projects function
+        const filterProjects = (filter) => {
+          projects.forEach((project) => {
+            const shouldShow =
+              filter === 'all' || project.classList.contains(filter);
+            project.style.display = shouldShow ? 'block' : 'none';
+            project.setAttribute('aria-hidden', !shouldShow);
+          });
+        };
+
+        // Handle filter clicks
+        filterItems.forEach((item) => {
+          item.addEventListener('click', () => {
+            // Remove highlight from all filters
+            filterItems.forEach((el) => {
+              el.querySelector('span')?.classList.add('hidden');
+              el.setAttribute('aria-selected', 'false');
+            });
+
+            // Add highlight to clicked filter
+            item.querySelector('span')?.classList.remove('hidden');
+            item.setAttribute('aria-selected', 'true');
+
+            // Filter projects
+            const filter = item.getAttribute('data-filter');
+            filterProjects(filter);
+          });
+        });
+
+        // Mobile menu toggle
+        mobileBtn?.addEventListener('click', () => {
+          const isExpanded = nav.classList.toggle('hidden');
+          mobileBtn.setAttribute('aria-expanded', !isExpanded);
+          mobileBtn.setAttribute(
+            'aria-label',
+            isExpanded ? 'Abrir menu' : 'Fechar menu',
+          );
+        });
+
+        // Initialize with 'all' filter
+        filterProjects('all');
+      });
+    </script>
     <script src="nav.js"></script>
   </body>
 </html>
