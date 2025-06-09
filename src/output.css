@@ -218,6 +218,9 @@
   .right-2 {
     right: calc(var(--spacing) * 2);
   }
+  .right-10 {
+    right: calc(var(--spacing) * 10);
+  }
   .-bottom-2 {
     bottom: calc(var(--spacing) * -2);
   }
@@ -230,8 +233,17 @@
   .bottom-2 {
     bottom: calc(var(--spacing) * 2);
   }
+  .bottom-10 {
+    bottom: calc(var(--spacing) * 10);
+  }
+  .-left-2 {
+    left: calc(var(--spacing) * -2);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
+  }
+  .left-2 {
+    left: calc(var(--spacing) * 2);
   }
   .z-40 {
     z-index: 40;
@@ -961,6 +973,11 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .md\:-right-10 {
+    @media (width >= 48rem) {
+      right: calc(var(--spacing) * -10);
+    }
+  }
   .md\:right-10 {
     @media (width >= 48rem) {
       right: calc(var(--spacing) * 10);
@@ -969,6 +986,21 @@
   .md\:bottom-10 {
     @media (width >= 48rem) {
       bottom: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:-left-2 {
+    @media (width >= 48rem) {
+      left: calc(var(--spacing) * -2);
+    }
+  }
+  .md\:-left-10 {
+    @media (width >= 48rem) {
+      left: calc(var(--spacing) * -10);
+    }
+  }
+  .md\:left-10 {
+    @media (width >= 48rem) {
+      left: calc(var(--spacing) * 10);
     }
   }
   .md\:col-span-2 {
