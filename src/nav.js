@@ -13,7 +13,6 @@ function mobileButton(){
     mobileMenu.classList.remove('flex');
   });
 }
-
 mobileButton();
 
 function navAtivo(){
@@ -31,8 +30,6 @@ function navAtivo(){
       }
     }
   }
-  
   links.forEach(ativarLink);
 }
-
 navAtivo();
